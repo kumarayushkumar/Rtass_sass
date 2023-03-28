@@ -1,0 +1,20 @@
+$percent: 20%;
+
+@each $color, $val in $colors {
+    .bg-#{$color} { background-color: $val; }
+    .text-#{$color} { color: $val; }
+    .bdr-#{$color} { border-color: $val; }
+
+    @for $i from 1 through 5 {
+        // light
+        .bg-#{$color}-lt-#{$i} { background-color: mix(white, $val, $i * $percent); }
+        .text-#{$color}-lt-#{$i} { color: mix(white, $val, $i * $percent); }
+        .bdr-#{$color}-lt-#{$i} { border-color: mix(white, $val, $i * $percent); }
+
+        // dark
+        .bg-#{$color}-dk-#{$i} { background-color: mix(black, $val, $i * $percent); }
+        .text-#{$color}-dk-#{$i} { color: mix(black, $val, $i * $percent); }
+        .bdr-#{$color}-dk-#{$i} { border-color: mix(black, $val, $i * $percent); }
+    }
+}
+

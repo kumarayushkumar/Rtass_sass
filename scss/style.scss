@@ -1,0 +1,12 @@
+* {
+    margin: 2rem;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+@import "variables";
+@import 'typography';
+@import 'colors';
+
+// Components
+@import 'components/card';
