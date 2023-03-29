@@ -112,30 +112,6 @@
   border-color: #08080a;
 }
 
-.bg-primary-lt-5 {
-  background-color: white;
-}
-
-.text-primary-lt-5 {
-  color: white;
-}
-
-.bdr-primary-lt-5 {
-  border-color: white;
-}
-
-.bg-primary-dk-5 {
-  background-color: black;
-}
-
-.text-primary-dk-5 {
-  color: black;
-}
-
-.bdr-primary-dk-5 {
-  border-color: black;
-}
-
 .bg-secondary {
   background-color: #0f0;
 }
@@ -242,30 +218,6 @@
 
 .bdr-secondary-dk-4 {
   border-color: #003300;
-}
-
-.bg-secondary-lt-5 {
-  background-color: white;
-}
-
-.text-secondary-lt-5 {
-  color: white;
-}
-
-.bdr-secondary-lt-5 {
-  border-color: white;
-}
-
-.bg-secondary-dk-5 {
-  background-color: black;
-}
-
-.text-secondary-dk-5 {
-  color: black;
-}
-
-.bdr-secondary-dk-5 {
-  border-color: black;
 }
 
 .bg-tertiary {
@@ -376,30 +328,6 @@
   border-color: #000033;
 }
 
-.bg-tertiary-lt-5 {
-  background-color: white;
-}
-
-.text-tertiary-lt-5 {
-  color: white;
-}
-
-.bdr-tertiary-lt-5 {
-  border-color: white;
-}
-
-.bg-tertiary-dk-5 {
-  background-color: black;
-}
-
-.text-tertiary-dk-5 {
-  color: black;
-}
-
-.bdr-tertiary-dk-5 {
-  border-color: black;
-}
-
 .bg-white {
   background-color: #fefefe;
 }
@@ -506,30 +434,6 @@
 
 .bdr-white-dk-4 {
   border-color: #333333;
-}
-
-.bg-white-lt-5 {
-  background-color: white;
-}
-
-.text-white-lt-5 {
-  color: white;
-}
-
-.bdr-white-lt-5 {
-  border-color: white;
-}
-
-.bg-white-dk-5 {
-  background-color: black;
-}
-
-.text-white-dk-5 {
-  color: black;
-}
-
-.bdr-white-dk-5 {
-  border-color: black;
 }
 
 .bg-black {
@@ -640,45 +544,59 @@
   border-color: #080808;
 }
 
-.bg-black-lt-5 {
-  background-color: white;
+.p-0 {
+  padding: 0;
 }
 
-.text-black-lt-5 {
-  color: white;
+.p-xs {
+  padding: 0.25rem;
 }
 
-.bdr-black-lt-5 {
-  border-color: white;
+.p-s {
+  padding: 0.5rem;
 }
 
-.bg-black-dk-5 {
-  background-color: black;
-}
-
-.text-black-dk-5 {
-  color: black;
-}
-
-.bdr-black-dk-5 {
-  border-color: black;
-}
-
-.card {
-  display: block;
+.p-m {
   padding: 1rem;
-  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.15);
 }
-.card--title {
-  font-size: 1.25rem;
-  font-weight: 700;
-  padding-bottom: 1rem;
+
+.p-l {
+  padding: 1.5rem;
 }
-.card--body {
-  font-size: 1rem;
-  font-weight: 400;
+
+.p-xl {
+  padding: 2rem;
 }
-.card--body a {
-  text-decoration: underline;
+
+.p-xxl {
+  padding: 4rem;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.m-xs {
+  margin: 0.25rem;
+}
+
+.m-s {
+  margin: 0.5rem;
+}
+
+.m-m {
+  margin: 1rem;
+}
+
+.m-l {
+  margin: 1.5rem;
+}
+
+.m-xl {
+  margin: 2rem;
+}
+
+.m-xxl {
+  margin: 4rem;
 }
 /*# sourceMappingURL=style.css.map */

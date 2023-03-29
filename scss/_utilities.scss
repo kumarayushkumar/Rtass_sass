@@ -1,0 +1,40 @@
+@use 'sass:math';
+
+$utilities: (
+    "padding": (
+        "prefix": "p",
+        "values": (
+            "0": 0,
+            "xs": $base-padding * 0.25,
+            "s": $base-padding * 0.5,
+            "m": $base-padding,
+            "l": $base-padding * 1.5,
+            "xl": $base-padding * 2,
+            "xxl": $base-padding * 4,
+        )
+    ),
+
+    "margin": (
+        "prefix": "m",
+        "values": (
+            "0": 0,
+            "xs": $base-margin * 0.25,
+            "s": $base-margin * 0.5,
+            "m": $base-margin,
+            "l": $base-margin * 1.5,
+            "xl": $base-margin * 2,
+            "xxl": $base-margin * 4,
+        )
+    )
+);
+
+@each $prop, $map in $utilities {
+    $prefix: map-get($map, "prefix");
+    $values: map-get($map, "values");
+
+    @each $key, $val in $values {
+        .#{$prefix}-#{$key} {
+            #{$prop}: $val;
+        }
+    }
+}

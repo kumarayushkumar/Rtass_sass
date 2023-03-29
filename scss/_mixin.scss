@@ -1,0 +1,44 @@
+// Button
+@mixin btn($display: inline-block, $bdr: 0, $padding, $bg-clr, $bdr-radius, $txt-clr: white) {
+    display: $display;
+    padding: $padding;
+    text-decoration: none;
+    cursor: pointer;
+    border: $bdr;
+    background-color: $bg-clr;
+    border-radius: $bdr-radius;
+    color: $text-clr;
+}
+
+
+// Card
+@mixin card($margin, $display: block, $padding, $shadow: 0, $bdr-radius, $bg-clr: white, $t-fs, $t-fw, $pb, $b-fs, $b-fw, $text-dcr: none) {
+    margin: $margin;
+    display: $display;
+    padding: $padding;
+    box-shadow: $shadow;
+    border-radius: $bdr-radius;
+    background-color: $bg-clr;
+
+    &--title {
+        font-size: $t-fs;
+        font-weight: $t-fw;
+        padding-bottom: $pb;
+    }
+
+    &--body {
+        font-size: $b-fs;
+        font-weight: $b-fw;
+
+        a { text-decoration: $text-dcr; }
+    }
+}
+
+// Shadow
+@mixin shadow($x: 0, $y: 0, $blur: 0, $spread: 0, $clr, $opacity: 0.15) {
+    box-shadow: $x $y $y $blur $spread rgba($clr, $opacity);
+}
+
+// Margin & Padding
+@mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0) { margin: $top $right $bottom $left; }
+@mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) { padding: $top $right $bottom $left; }
