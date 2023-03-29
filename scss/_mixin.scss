@@ -1,7 +1,6 @@
 // Button
-@mixin btn($display: inline-block, $bdr: 0, $padding, $bg-clr, $bdr-radius, $txt-clr: white) {
+@mixin btn($display: inline-block, $bdr: 0, $bg-clr, $bdr-radius, $txt-clr: white) {
     display: $display;
-    padding: $padding;
     text-decoration: none;
     cursor: pointer;
     border: $bdr;
@@ -42,3 +41,44 @@
 // Margin & Padding
 @mixin margin($top: 0, $right: 0, $bottom: 0, $left: 0) { margin: $top $right $bottom $left; }
 @mixin padding($top: 0, $right: 0, $bottom: 0, $left: 0) { padding: $top $right $bottom $left; }
+
+// Border & Border Radius
+@mixin bdr($width: 0, $style: solid, $clr: black) { border: $width $style $clr; }
+@mixin bdr-rd($top-left: 0, $top-right: 0, $bottom-right: 0, $bottom-left: 0) { border-radius: $top-left $top-right $bottom-right $bottom-left; }
+
+// Font Size
+@mixin fs($size: 1rem) { font-size: $size; }
+
+
+
+// Breakpoints
+$breakpoints: (
+    'xs': 0,
+    'sm': 576px,
+    'md': 768px,
+    'lg': 992px,
+    'xl': 1200px,
+    'xxl': 1400px,
+);
+
+@mixin xs { 
+    @media (min-width: map-get($breakpoints, 'xs')) { @content; }
+}
+@mixin sm {
+    @media (min-width: map-get($breakpoints, 'sm')) { @content; }
+}
+@mixin md {
+    @media (min-width: map-get($breakpoints, 'md')) { @content; }
+}
+@mixin lg {
+    @media (min-width: map-get($breakpoints, 'lg')) { @content; }
+}
+@mixin xl {
+    @media (min-width: map-get($breakpoints, 'xl')) { @content; }
+}
+@mixin xxl {
+    @media (min-width: map-get($breakpoints, 'xxl')) { @content; }
+}
+@mixin breakpoint($bp) {
+    @media (min-width: $bp) { @content; }
+}

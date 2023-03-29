@@ -599,4 +599,104 @@
 .m-xxl {
   margin: 4rem;
 }
+
+.bdr-rd-none {
+  border-radius: 0;
+}
+
+.bdr-rd-xs {
+  border-radius: 0.25rem;
+}
+
+.bdr-rd-s {
+  border-radius: 0.5rem;
+}
+
+.bdr-rd-m {
+  border-radius: 1rem;
+}
+
+.bdr-rd-l {
+  border-radius: 1.5rem;
+}
+
+.bdr-rd-xl {
+  border-radius: 2rem;
+}
+
+.bdr-rd-xxl {
+  border-radius: 50%;
+}
+
+.d-n {
+  display: none;
+}
+
+.d-b {
+  display: block;
+}
+
+.d-ib {
+  display: inline-block;
+}
+
+.d-i {
+  display: inline;
+}
+
+.d-f {
+  display: flex;
+}
+
+.d-if {
+  display: inline-flex;
+}
+
+.d-g {
+  display: grid;
+}
+
+.d-ig {
+  display: inline-grid;
+}
+
+.fs-xs {
+  font-size: 0.75rem;
+}
+
+.fs-s {
+  font-size: 0.875rem;
+}
+
+.fs-m {
+  font-size: 1rem;
+}
+
+.fs-l {
+  font-size: 1.25rem;
+}
+
+.fs-xl {
+  font-size: 1.5rem;
+}
+
+.fs-xxl {
+  font-size: 2rem;
+}
+
+.fw-n {
+  font-weight: normal;
+}
+
+.fw-b {
+  font-weight: bold;
+}
+
+.fw-l {
+  font-weight: lighter;
+}
+
+.fw-d {
+  font-weight: bolder;
+}
 /*# sourceMappingURL=style.css.map */

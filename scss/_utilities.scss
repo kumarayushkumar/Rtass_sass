@@ -25,7 +25,56 @@ $utilities: (
             "xl": $base-margin * 2,
             "xxl": $base-margin * 4,
         )
-    )
+    ),
+
+    "border-radius": (
+        "prefix": "bdr-rd",
+        "values": (
+            "none": 0,
+            "xs": $base-border-radius * 0.25,
+            "s": $base-border-radius * 0.5,
+            "m": $base-border-radius,
+            "l": $base-border-radius * 1.5,
+            "xl": $base-border-radius * 2,
+            "xxl": 50%,
+        )
+    ),
+
+    "display": (
+        "prefix": "d",
+        "values": (
+            "n": none,
+            "b": block,
+            "ib": inline-block,
+            "i": inline,
+            "f": flex,
+            "if": inline-flex,
+            "g": grid,
+            "ig": inline-grid,
+        )
+    ),
+
+    "font-size": (
+        "prefix": "fs",
+        "values": (
+            "xs": $base-font-size * 0.75,
+            "s": $base-font-size * 0.875,
+            "m": $base-font-size,
+            "l": $base-font-size * 1.25,
+            "xl": $base-font-size * 1.5,
+            "xxl": $base-font-size * 2,
+        )
+    ),
+
+    "font-weight": (
+        "prefix": "fw",
+        "values": (
+            "n": normal,
+            "b": bold,
+            "l": lighter,
+            "d": bolder,
+        )
+    ),
 );
 
 @each $prop, $map in $utilities {

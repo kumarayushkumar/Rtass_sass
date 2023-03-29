@@ -5,10 +5,12 @@
 }
 
 @import "variables";
-@import 'typography';
 @import 'colors';
 
 @import 'mixin';
 @import 'utilities';
+
+@import 'typography';
+
 // Components
 @import 'components/card';
