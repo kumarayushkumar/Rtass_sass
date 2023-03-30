@@ -7,11 +7,11 @@ $colors: (
     "black": #272727,
 );
 
-$base-size: 1rem;
-$base-margin: $base-size;
-$base-padding: $base-size;
-$base-font-size: $base-size;
-$base-border-radius: $base-size;
+$base-size: 1rem !default;
+$base-margin: $base-size !default;
+$base-padding: $base-size !default;
+$base-font-size: $base-size !default;
+$base-border-radius: $base-size !default;
 
 
 

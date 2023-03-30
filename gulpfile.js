@@ -4,7 +4,7 @@ const sass = require('gulp-sass')(require('sass'))
 function buildScss() {
     return src('scss/**/*.scss', { sourcemaps: true })
         .pipe(sass())
-        .pipe(dest('css', { sourcemaps: '.' }))
+        .pipe(dest('css'))
 }
 
 function watchScss() {
