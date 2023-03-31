@@ -1,3 +1,5 @@
+@use 'variables' as *;
+
 $percent: 20%;
 
 @each $clr, $val in $colors {

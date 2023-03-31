@@ -1,16 +1,8 @@
-* {
-    margin: 2rem;
+@use 'abstracts' as *;
+
+body {
+    margin: 0rem;
     box-sizing: border-box;
     text-decoration: none;
+    scroll-behavior: smooth;
 }
-
-@import "variables";
-@import 'colors';
-
-@import 'mixin';
-@import 'utilities';
-
-@import 'typography';
-
-// Components
-@import 'components/card';

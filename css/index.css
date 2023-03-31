@@ -1,9 +1,3 @@
-* {
-  margin: 2rem;
-  box-sizing: border-box;
-  text-decoration: none;
-}
-
 .bg-primary {
   background-color: #272730;
 }
@@ -113,219 +107,219 @@
 }
 
 .bg-secondary {
-  background-color: #0f0;
+  background-color: #f5f5f5;
 }
 
 .text-secondary {
-  color: #0f0;
+  color: #f5f5f5;
 }
 
 .bdr-secondary {
-  border-color: #0f0;
+  border-color: #f5f5f5;
 }
 
 .bg-secondary-lt-1 {
-  background-color: #33ff33;
+  background-color: #f7f7f7;
 }
 
 .text-secondary-lt-1 {
-  color: #33ff33;
+  color: #f7f7f7;
 }
 
 .bdr-secondary-lt-1 {
-  border-color: #33ff33;
+  border-color: #f7f7f7;
 }
 
 .bg-secondary-dk-1 {
-  background-color: #00cc00;
+  background-color: #c4c4c4;
 }
 
 .text-secondary-dk-1 {
-  color: #00cc00;
+  color: #c4c4c4;
 }
 
 .bdr-secondary-dk-1 {
-  border-color: #00cc00;
+  border-color: #c4c4c4;
 }
 
 .bg-secondary-lt-2 {
-  background-color: #66ff66;
+  background-color: #f9f9f9;
 }
 
 .text-secondary-lt-2 {
-  color: #66ff66;
+  color: #f9f9f9;
 }
 
 .bdr-secondary-lt-2 {
-  border-color: #66ff66;
+  border-color: #f9f9f9;
 }
 
 .bg-secondary-dk-2 {
-  background-color: #009900;
+  background-color: #939393;
 }
 
 .text-secondary-dk-2 {
-  color: #009900;
+  color: #939393;
 }
 
 .bdr-secondary-dk-2 {
-  border-color: #009900;
+  border-color: #939393;
 }
 
 .bg-secondary-lt-3 {
-  background-color: #99ff99;
+  background-color: #fbfbfb;
 }
 
 .text-secondary-lt-3 {
-  color: #99ff99;
+  color: #fbfbfb;
 }
 
 .bdr-secondary-lt-3 {
-  border-color: #99ff99;
+  border-color: #fbfbfb;
 }
 
 .bg-secondary-dk-3 {
-  background-color: #006600;
+  background-color: #626262;
 }
 
 .text-secondary-dk-3 {
-  color: #006600;
+  color: #626262;
 }
 
 .bdr-secondary-dk-3 {
-  border-color: #006600;
+  border-color: #626262;
 }
 
 .bg-secondary-lt-4 {
-  background-color: #ccffcc;
+  background-color: #fdfdfd;
 }
 
 .text-secondary-lt-4 {
-  color: #ccffcc;
+  color: #fdfdfd;
 }
 
 .bdr-secondary-lt-4 {
-  border-color: #ccffcc;
+  border-color: #fdfdfd;
 }
 
 .bg-secondary-dk-4 {
-  background-color: #003300;
+  background-color: #313131;
 }
 
 .text-secondary-dk-4 {
-  color: #003300;
+  color: #313131;
 }
 
 .bdr-secondary-dk-4 {
-  border-color: #003300;
+  border-color: #313131;
 }
 
 .bg-tertiary {
-  background-color: #00f;
+  background-color: #f5f5f5;
 }
 
 .text-tertiary {
-  color: #00f;
+  color: #f5f5f5;
 }
 
 .bdr-tertiary {
-  border-color: #00f;
+  border-color: #f5f5f5;
 }
 
 .bg-tertiary-lt-1 {
-  background-color: #3333ff;
+  background-color: #f7f7f7;
 }
 
 .text-tertiary-lt-1 {
-  color: #3333ff;
+  color: #f7f7f7;
 }
 
 .bdr-tertiary-lt-1 {
-  border-color: #3333ff;
+  border-color: #f7f7f7;
 }
 
 .bg-tertiary-dk-1 {
-  background-color: #0000cc;
+  background-color: #c4c4c4;
 }
 
 .text-tertiary-dk-1 {
-  color: #0000cc;
+  color: #c4c4c4;
 }
 
 .bdr-tertiary-dk-1 {
-  border-color: #0000cc;
+  border-color: #c4c4c4;
 }
 
 .bg-tertiary-lt-2 {
-  background-color: #6666ff;
+  background-color: #f9f9f9;
 }
 
 .text-tertiary-lt-2 {
-  color: #6666ff;
+  color: #f9f9f9;
 }
 
 .bdr-tertiary-lt-2 {
-  border-color: #6666ff;
+  border-color: #f9f9f9;
 }
 
 .bg-tertiary-dk-2 {
-  background-color: #000099;
+  background-color: #939393;
 }
 
 .text-tertiary-dk-2 {
-  color: #000099;
+  color: #939393;
 }
 
 .bdr-tertiary-dk-2 {
-  border-color: #000099;
+  border-color: #939393;
 }
 
 .bg-tertiary-lt-3 {
-  background-color: #9999ff;
+  background-color: #fbfbfb;
 }
 
 .text-tertiary-lt-3 {
-  color: #9999ff;
+  color: #fbfbfb;
 }
 
 .bdr-tertiary-lt-3 {
-  border-color: #9999ff;
+  border-color: #fbfbfb;
 }
 
 .bg-tertiary-dk-3 {
-  background-color: #000066;
+  background-color: #626262;
 }
 
 .text-tertiary-dk-3 {
-  color: #000066;
+  color: #626262;
 }
 
 .bdr-tertiary-dk-3 {
-  border-color: #000066;
+  border-color: #626262;
 }
 
 .bg-tertiary-lt-4 {
-  background-color: #ccccff;
+  background-color: #fdfdfd;
 }
 
 .text-tertiary-lt-4 {
-  color: #ccccff;
+  color: #fdfdfd;
 }
 
 .bdr-tertiary-lt-4 {
-  border-color: #ccccff;
+  border-color: #fdfdfd;
 }
 
 .bg-tertiary-dk-4 {
-  background-color: #000033;
+  background-color: #313131;
 }
 
 .text-tertiary-dk-4 {
-  color: #000033;
+  color: #313131;
 }
 
 .bdr-tertiary-dk-4 {
-  border-color: #000033;
+  border-color: #313131;
 }
 
 .bg-white {
@@ -437,111 +431,111 @@
 }
 
 .bg-black {
-  background-color: #272727;
+  background-color: #222222;
 }
 
 .text-black {
-  color: #272727;
+  color: #222222;
 }
 
 .bdr-black {
-  border-color: #272727;
+  border-color: #222222;
 }
 
 .bg-black-lt-1 {
-  background-color: #525252;
+  background-color: #4e4e4e;
 }
 
 .text-black-lt-1 {
-  color: #525252;
+  color: #4e4e4e;
 }
 
 .bdr-black-lt-1 {
-  border-color: #525252;
+  border-color: #4e4e4e;
 }
 
 .bg-black-dk-1 {
-  background-color: #1f1f1f;
+  background-color: #1b1b1b;
 }
 
 .text-black-dk-1 {
-  color: #1f1f1f;
+  color: #1b1b1b;
 }
 
 .bdr-black-dk-1 {
-  border-color: #1f1f1f;
+  border-color: #1b1b1b;
 }
 
 .bg-black-lt-2 {
-  background-color: #7d7d7d;
+  background-color: #7a7a7a;
 }
 
 .text-black-lt-2 {
-  color: #7d7d7d;
+  color: #7a7a7a;
 }
 
 .bdr-black-lt-2 {
-  border-color: #7d7d7d;
+  border-color: #7a7a7a;
 }
 
 .bg-black-dk-2 {
-  background-color: #171717;
+  background-color: #141414;
 }
 
 .text-black-dk-2 {
-  color: #171717;
+  color: #141414;
 }
 
 .bdr-black-dk-2 {
-  border-color: #171717;
+  border-color: #141414;
 }
 
 .bg-black-lt-3 {
-  background-color: darkgray;
+  background-color: #a7a7a7;
 }
 
 .text-black-lt-3 {
-  color: darkgray;
+  color: #a7a7a7;
 }
 
 .bdr-black-lt-3 {
-  border-color: darkgray;
+  border-color: #a7a7a7;
 }
 
 .bg-black-dk-3 {
-  background-color: #101010;
+  background-color: #0e0e0e;
 }
 
 .text-black-dk-3 {
-  color: #101010;
+  color: #0e0e0e;
 }
 
 .bdr-black-dk-3 {
-  border-color: #101010;
+  border-color: #0e0e0e;
 }
 
 .bg-black-lt-4 {
-  background-color: #d4d4d4;
+  background-color: lightgray;
 }
 
 .text-black-lt-4 {
-  color: #d4d4d4;
+  color: lightgray;
 }
 
 .bdr-black-lt-4 {
-  border-color: #d4d4d4;
+  border-color: lightgray;
 }
 
 .bg-black-dk-4 {
-  background-color: #080808;
+  background-color: #070707;
 }
 
 .text-black-dk-4 {
-  color: #080808;
+  color: #070707;
 }
 
 .bdr-black-dk-4 {
-  border-color: #080808;
+  border-color: #070707;
 }
 
 .p-0 {
@@ -698,4 +692,11 @@
 
 .fw-bd {
   font-weight: bolder;
+}
+
+body {
+  margin: 0rem;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
