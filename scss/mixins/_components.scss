@@ -1,0 +1,34 @@
+// Button
+@mixin btn($display: inline-block, $bdr: 0, $bg-clr, $bdr-radius, $txt-clr: white) {
+    display: $display;
+    text-decoration: none;
+    cursor: pointer;
+    border: $bdr;
+    background-color: $bg-clr;
+    border-radius: $bdr-radius;
+    color: $text-clr;
+}
+
+
+// Card
+@mixin card($margin, $display: block, $padding, $shadow: 0, $bdr-radius, $bg-clr: white, $t-fs, $t-fw, $pb, $b-fs, $b-fw, $text-dcr: none) {
+    margin: $margin;
+    display: $display;
+    padding: $padding;
+    box-shadow: $shadow;
+    border-radius: $bdr-radius;
+    background-color: $bg-clr;
+
+    &--title {
+        font-size: $t-fs;
+        font-weight: $t-fw;
+        padding-bottom: $pb;
+    }
+
+    &--body {
+        font-size: $b-fs;
+        font-weight: $b-fw;
+
+        a { text-decoration: $text-dcr; }
+    }
+}
