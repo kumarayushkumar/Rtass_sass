@@ -1,5 +1,5 @@
 {
-  "name": "rtass-sass",
+  "name": "@kumarayushkumar/rtass-sass",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,5 +12,8 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.60.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/kumarayushkumar"
   }
 }

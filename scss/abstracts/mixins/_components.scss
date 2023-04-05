@@ -1,5 +1,5 @@
 // Button
-@mixin btn($display: inline-block, $bdr: 0, $bg-clr, $bdr-radius, $txt-clr: white) {
+@mixin btn($display: inline-block, $bdr: 0, $bg-clr, $bdr-radius, $text-clr: white) {
     display: $display;
     text-decoration: none;
     cursor: pointer;
