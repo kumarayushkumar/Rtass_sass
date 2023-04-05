@@ -538,6 +538,13 @@
   border-color: #070707;
 }
 
+body {
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
 .p-0 {
   padding: 0;
 }
@@ -692,11 +699,4 @@
 
 .fw-bd {
   font-weight: bolder;
-}
-
-body {
-  margin: 0rem;
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
 }
