@@ -1,15 +1,23 @@
 @forward 'variables';
 @forward 'colors';
 
-@forward 'root';
 @forward 'utilities';
 
-@forward 'typography';
-
+@forward 'grid';
 
 @forward 'mixins/breakpoints';
 @forward 'mixins/components';
 @forward 'mixins/utilities';
 
+@forward 'typography';
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
 
-
+body {
+  margin: 0;
+}

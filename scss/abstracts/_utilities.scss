@@ -1,89 +1,162 @@
 @use 'variables' as *;
 
 $utilities: (
-    "padding": (
-        "prefix": "p",
-        "values": (
-            "0": 0,
-            "xs": $base-padding * 0.25,
-            "s": $base-padding * 0.5,
-            "m": $base-padding,
-            "l": $base-padding * 1.5,
-            "xl": $base-padding * 2,
-            "xxl": $base-padding * 4,
-        )
-    ),
+  "padding": ("prefix": "p",
+    "values": ("0": 0,
+      "xs": $base-padding * 0.25,
+      "s": $base-padding * 0.5,
+      "m": $base-padding,
+      "l": $base-padding * 1.5,
+      "xl": $base-padding * 2,
+      "xxl": $base-padding * 4,
+    )),
 
-    "margin": (
-        "prefix": "m",
-        "values": (
-            "0": 0,
-            "xs": $base-margin * 0.25,
-            "s": $base-margin * 0.5,
-            "m": $base-margin,
-            "l": $base-margin * 1.5,
-            "xl": $base-margin * 2,
-            "xxl": $base-margin * 4,
-        )
-    ),
+  "padding-left": ("prefix": "pl",
+    "values": ("0": 0,
+      "xs": $base-padding * 0.25,
+      "s": $base-padding * 0.5,
+      "m": $base-padding,
+      "l": $base-padding * 1.5,
+      "xl": $base-padding * 2,
+      "xxl": $base-padding * 4,
+    )),
 
-    "border-radius": (
-        "prefix": "bdr-rd",
-        "values": (
-            "none": 0,
-            "xs": $base-border-radius * 0.25,
-            "s": $base-border-radius * 0.5,
-            "m": $base-border-radius,
-            "l": $base-border-radius * 1.5,
-            "xl": $base-border-radius * 2,
-            "xxl": 50%,
-        )
-    ),
+  "padding-right": ("prefix": "pr",
+    "values": ("0": 0,
+      "xs": $base-padding * 0.25,
+      "s": $base-padding * 0.5,
+      "m": $base-padding,
+      "l": $base-padding * 1.5,
+      "xl": $base-padding * 2,
+      "xxl": $base-padding * 4,
+    )),
 
-    "display": (
-        "prefix": "d",
-        "values": (
-            "n": none,
-            "b": block,
-            "ib": inline-block,
-            "i": inline,
-            "f": flex,
-            "if": inline-flex,
-            "g": grid,
-            "ig": inline-grid,
-        )
-    ),
+  "padding-top": ("prefix": "pt",
+    "values": ("0": 0,
+      "xs": $base-padding * 0.25,
+      "s": $base-padding * 0.5,
+      "m": $base-padding,
+      "l": $base-padding * 1.5,
+      "xl": $base-padding * 2,
+      "xxl": $base-padding * 4,
+    )),
 
-    "font-size": (
-        "prefix": "fs",
-        "values": (
-            "xs": $base-font-size * 0.75,
-            "s": $base-font-size * 0.875,
-            "m": $base-font-size,
-            "l": $base-font-size * 1.25,
-            "xl": $base-font-size * 1.5,
-            "xxl": $base-font-size * 2,
-        )
-    ),
+  "padding-bottom": ("prefix": "pb",
+    "values": ("0": 0,
+      "xs": $base-padding * 0.25,
+      "s": $base-padding * 0.5,
+      "m": $base-padding,
+      "l": $base-padding * 1.5,
+      "xl": $base-padding * 2,
+      "xxl": $base-padding * 4,
+    )),
 
-    "font-weight": (
-        "prefix": "fw",
-        "values": (
-            "n": normal,
-            "b": bold,
-            "l": lighter,
-            "bd": bolder,
-        )
-    ),
-);
+  "margin": ("prefix": "m",
+    "values": ("0": 0,
+      "xs": $base-margin * 0.25,
+      "s": $base-margin * 0.5,
+      "m": $base-margin,
+      "l": $base-margin * 1.5,
+      "xl": $base-margin * 2,
+      "xxl": $base-margin * 4,
+    )),
 
-@each $prop, $map in $utilities {
-    $prefix: map-get($map, "prefix");
-    $values: map-get($map, "values");
+  "margin-left": ("prefix": "ml",
+    "values": ("0": 0,
+      "xs": $base-margin * 0.25,
+      "s": $base-margin * 0.5,
+      "m": $base-margin,
+      "l": $base-margin * 1.5,
+      "xl": $base-margin * 2,
+      "xxl": $base-margin * 4,
+    )),
 
-    @each $key, $val in $values {
-        .#{$prefix}-#{$key} {
-            #{$prop}: $val;
-        }
+  "margin-right": ("prefix": "mr",
+    "values": ("0": 0,
+      "xs": $base-margin * 0.25,
+      "s": $base-margin * 0.5,
+      "m": $base-margin,
+      "l": $base-margin * 1.5,
+      "xl": $base-margin * 2,
+      "xxl": $base-margin * 4,
+    )),
+  
+  "margin-top": ("prefix": "mt",
+    "values": ("0": 0,
+      "xs": $base-margin * 0.25,
+      "s": $base-margin * 0.5,
+      "m": $base-margin,
+      "l": $base-margin * 1.5,
+      "xl": $base-margin * 2,
+      "xxl": $base-margin * 4,
+    )),
+
+  "margin-bottom": ("prefix": "mb",
+    "values": ("0": 0,
+      "xs": $base-margin * 0.25,
+      "s": $base-margin * 0.5,
+      "m": $base-margin,
+      "l": $base-margin * 1.5,
+      "xl": $base-margin * 2,
+      "xxl": $base-margin * 4,
+    )),
+
+  "border-radius": ("prefix": "bdr-rd",
+    "values": ("none": 0,
+      "xs": $base-border-radius * 0.25,
+      "s": $base-border-radius * 0.5,
+      "m": $base-border-radius,
+      "l": $base-border-radius * 1.5,
+      "xl": $base-border-radius * 2,
+      "xxl": 50%,
+    )),
+
+  "display": ("prefix": "d",
+    "values": ("n": none,
+      "b": block,
+      "ib": inline-block,
+      "i": inline,
+      "f": flex,
+      "if": inline-flex,
+      "g": grid,
+      "ig": inline-grid,
+    )),
+
+  "font-size": ("prefix": "fs",
+    "values": ("xs": $base-font-size * 0.75,
+      "s": $base-font-size * 0.875,
+      "m": $base-font-size,
+      "l": $base-font-size * 1.25,
+      "xl": $base-font-size * 1.5,
+      "xxl": $base-font-size * 2,
+    )),
+
+  "font-weight": ("prefix": "fw",
+    "values": ("n": normal,
+      "b": bold,
+      "l": lighter,
+      "bd": bolder,
+      "1": 100,
+      "2": 200,
+      "3": 300,
+      "4": 400,
+      "5": 500,
+      "6": 600,
+      "7": 700,
+      "8": 800,
+      "9": 900,
+    )),
+) !default;
+
+@each $prop,
+$map in $utilities {
+  $prefix: map-get($map, "prefix");
+  $values: map-get($map, "values");
+
+  @each $key,
+  $val in $values {
+    .#{$prefix}-#{$key} {
+      #{$prop}: $val;
     }
+  }
 }

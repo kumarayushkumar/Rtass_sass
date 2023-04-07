@@ -6,24 +6,45 @@ $white: #fefefe !default;
 $black: #222222 !default;
 
 $colors: (
-    "primary": $primary,
-    "secondary": $secondary,
-    "tertiary": $tertiary,
-    "white": $white,
-    "black": $black,
+  "primary": $primary,
+  "secondary": $secondary,
+  "tertiary": $tertiary,
+  "white": $white,
+  "black": $black,
 );
+$clr-mix-percent: 20% !default;
 
 // Base Size
 $base-size: 1rem !default;
 $base-margin: $base-size !default;
 $base-padding: $base-size !default;
-$base-font-size: $base-size !default;
 $base-border-radius: $base-size !default;
 
+// Typo
+$base-font-family: "Roboto", sans-serif !default;
+$base-font-size: $base-size !default;
+$base-font-weight: 400 !default;
+$base-line-heigh: 1 !default;
 
+// Grid
+$grid-columns: 12 !default;
+$grid-gutter: $base-size !default;
+$grid-max-width: 1200px !default;
+$grid-gaps: (
+  "0": 0,
+  "1": 10px,
+  "2": 20px,
+  "3": 30px,
+) !default;
 
+$layout-val: start center space-between space-around space-evenly flex-start flex-end !default;
 
-
-
-
-
+// Breakpoints
+$breakpoints: (
+  'xs': 0,
+  'sm': 576px,
+  'md': 768px,
+  'lg': 992px,
+  'xl': 1200px,
+  'xxl': 1400px,
+  ) !default;

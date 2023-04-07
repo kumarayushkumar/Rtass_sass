@@ -1,22 +1,45 @@
 @use 'variables' as *;
 
-$percent: 20%;
+@each $clr,
+$val in $colors {
+  .bg-#{$clr} {
+    background-color: $val;
+  }
 
-@each $clr, $val in $colors {
-    .bg-#{$clr} { background-color: $val; }
-    .text-#{$clr} { color: $val; }
-    .bdr-#{$clr} { border-color: $val; }
+  .text-#{$clr} {
+    color: $val;
+  }
 
-    @for $i from 1 through 4 {
-        // light
-        .bg-#{$clr}-lt-#{$i} { background-color: mix(white, $val, $i * $percent); }
-        .text-#{$clr}-lt-#{$i} { color: mix(white, $val, $i * $percent); }
-        .bdr-#{$clr}-lt-#{$i} { border-color: mix(white, $val, $i * $percent); }
+  .bdr-#{$clr} {
+    border-color: $val;
+  }
 
-        // dark
-        .bg-#{$clr}-dk-#{$i} { background-color: mix(black, $val, $i * $percent); }
-        .text-#{$clr}-dk-#{$i} { color: mix(black, $val, $i * $percent); }
-        .bdr-#{$clr}-dk-#{$i} { border-color: mix(black, $val, $i * $percent); }
+  @for $i from 1 through 4 {
+
+    // light
+    .bg-#{$clr}-lt-#{$i} {
+      background-color: mix(white, $val, $i * $clr-mix-percent);
     }
-}
 
+    .text-#{$clr}-lt-#{$i} {
+      color: mix(white, $val, $i * $clr-mix-percent);
+    }
+
+    .bdr-#{$clr}-lt-#{$i} {
+      border-color: mix(white, $val, $i * $clr-mix-percent);
+    }
+
+    // dark
+    .bg-#{$clr}-dk-#{$i} {
+      background-color: mix(black, $val, $i * $clr-mix-percent);
+    }
+
+    .text-#{$clr}-dk-#{$i} {
+      color: mix(black, $val, $i * $clr-mix-percent);
+    }
+
+    .bdr-#{$clr}-dk-#{$i} {
+      border-color: mix(black, $val, $i * $clr-mix-percent);
+    }
+  }
+}
