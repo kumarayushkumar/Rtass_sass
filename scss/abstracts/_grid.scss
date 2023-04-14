@@ -3,7 +3,7 @@
 @use 'mixins/breakpoints' as *;
 
 .container {
-  width: 100%;
+  width: $grid-width;
   max-width: $grid-max-width;
   margin: 0 auto;
   padding: 0 $grid-gutter;

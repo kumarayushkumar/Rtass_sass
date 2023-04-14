@@ -127,8 +127,9 @@ $utilities: (
       "s": $base-font-size * 0.875,
       "m": $base-font-size,
       "l": $base-font-size * 1.25,
-      "xl": $base-font-size * 1.5,
-      "xxl": $base-font-size * 2,
+      "xl": $base-font-size * 1.75,
+      "xxl": $base-font-size * 2.75,
+      "xxxl": $base-font-size * 4.5,
     )),
 
   "font-weight": ("prefix": "fw",
