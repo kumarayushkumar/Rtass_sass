@@ -1,324 +1,336 @@
-.bg-primary {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+}
+
+.bg-pri {
   background-color: #1a1ae2;
 }
 
-.text-primary {
+.text-pri {
   color: #1a1ae2;
 }
 
-.bdr-primary {
+.bdr-pri {
   border-color: #1a1ae2;
 }
 
-.bg-primary-lt-1 {
+.bg-pri-lt-1 {
   background-color: #4848e8;
 }
 
-.text-primary-lt-1 {
+.text-pri-lt-1 {
   color: #4848e8;
 }
 
-.bdr-primary-lt-1 {
+.bdr-pri-lt-1 {
   border-color: #4848e8;
 }
 
-.bg-primary-dk-1 {
+.bg-pri-dk-1 {
   background-color: #1515b5;
 }
 
-.text-primary-dk-1 {
+.text-pri-dk-1 {
   color: #1515b5;
 }
 
-.bdr-primary-dk-1 {
+.bdr-pri-dk-1 {
   border-color: #1515b5;
 }
 
-.bg-primary-lt-2 {
+.bg-pri-lt-2 {
   background-color: #7676ee;
 }
 
-.text-primary-lt-2 {
+.text-pri-lt-2 {
   color: #7676ee;
 }
 
-.bdr-primary-lt-2 {
+.bdr-pri-lt-2 {
   border-color: #7676ee;
 }
 
-.bg-primary-dk-2 {
+.bg-pri-dk-2 {
   background-color: #101088;
 }
 
-.text-primary-dk-2 {
+.text-pri-dk-2 {
   color: #101088;
 }
 
-.bdr-primary-dk-2 {
+.bdr-pri-dk-2 {
   border-color: #101088;
 }
 
-.bg-primary-lt-3 {
+.bg-pri-lt-3 {
   background-color: #a3a3f3;
 }
 
-.text-primary-lt-3 {
+.text-pri-lt-3 {
   color: #a3a3f3;
 }
 
-.bdr-primary-lt-3 {
+.bdr-pri-lt-3 {
   border-color: #a3a3f3;
 }
 
-.bg-primary-dk-3 {
+.bg-pri-dk-3 {
   background-color: #0a0a5a;
 }
 
-.text-primary-dk-3 {
+.text-pri-dk-3 {
   color: #0a0a5a;
 }
 
-.bdr-primary-dk-3 {
+.bdr-pri-dk-3 {
   border-color: #0a0a5a;
 }
 
-.bg-primary-lt-4 {
+.bg-pri-lt-4 {
   background-color: #d1d1f9;
 }
 
-.text-primary-lt-4 {
+.text-pri-lt-4 {
   color: #d1d1f9;
 }
 
-.bdr-primary-lt-4 {
+.bdr-pri-lt-4 {
   border-color: #d1d1f9;
 }
 
-.bg-primary-dk-4 {
+.bg-pri-dk-4 {
   background-color: #05052d;
 }
 
-.text-primary-dk-4 {
+.text-pri-dk-4 {
   color: #05052d;
 }
 
-.bdr-primary-dk-4 {
+.bdr-pri-dk-4 {
   border-color: #05052d;
 }
 
-.bg-secondary {
+.bg-sec {
   background-color: #f5f5f5;
 }
 
-.text-secondary {
+.text-sec {
   color: #f5f5f5;
 }
 
-.bdr-secondary {
+.bdr-sec {
   border-color: #f5f5f5;
 }
 
-.bg-secondary-lt-1 {
+.bg-sec-lt-1 {
   background-color: #f7f7f7;
 }
 
-.text-secondary-lt-1 {
+.text-sec-lt-1 {
   color: #f7f7f7;
 }
 
-.bdr-secondary-lt-1 {
+.bdr-sec-lt-1 {
   border-color: #f7f7f7;
 }
 
-.bg-secondary-dk-1 {
+.bg-sec-dk-1 {
   background-color: #c4c4c4;
 }
 
-.text-secondary-dk-1 {
+.text-sec-dk-1 {
   color: #c4c4c4;
 }
 
-.bdr-secondary-dk-1 {
+.bdr-sec-dk-1 {
   border-color: #c4c4c4;
 }
 
-.bg-secondary-lt-2 {
+.bg-sec-lt-2 {
   background-color: #f9f9f9;
 }
 
-.text-secondary-lt-2 {
+.text-sec-lt-2 {
   color: #f9f9f9;
 }
 
-.bdr-secondary-lt-2 {
+.bdr-sec-lt-2 {
   border-color: #f9f9f9;
 }
 
-.bg-secondary-dk-2 {
+.bg-sec-dk-2 {
   background-color: #939393;
 }
 
-.text-secondary-dk-2 {
+.text-sec-dk-2 {
   color: #939393;
 }
 
-.bdr-secondary-dk-2 {
+.bdr-sec-dk-2 {
   border-color: #939393;
 }
 
-.bg-secondary-lt-3 {
+.bg-sec-lt-3 {
   background-color: #fbfbfb;
 }
 
-.text-secondary-lt-3 {
+.text-sec-lt-3 {
   color: #fbfbfb;
 }
 
-.bdr-secondary-lt-3 {
+.bdr-sec-lt-3 {
   border-color: #fbfbfb;
 }
 
-.bg-secondary-dk-3 {
+.bg-sec-dk-3 {
   background-color: #626262;
 }
 
-.text-secondary-dk-3 {
+.text-sec-dk-3 {
   color: #626262;
 }
 
-.bdr-secondary-dk-3 {
+.bdr-sec-dk-3 {
   border-color: #626262;
 }
 
-.bg-secondary-lt-4 {
+.bg-sec-lt-4 {
   background-color: #fdfdfd;
 }
 
-.text-secondary-lt-4 {
+.text-sec-lt-4 {
   color: #fdfdfd;
 }
 
-.bdr-secondary-lt-4 {
+.bdr-sec-lt-4 {
   border-color: #fdfdfd;
 }
 
-.bg-secondary-dk-4 {
+.bg-sec-dk-4 {
   background-color: #313131;
 }
 
-.text-secondary-dk-4 {
+.text-sec-dk-4 {
   color: #313131;
 }
 
-.bdr-secondary-dk-4 {
+.bdr-sec-dk-4 {
   border-color: #313131;
 }
 
-.bg-tertiary {
+.bg-ter {
   background-color: #f5f5f5;
 }
 
-.text-tertiary {
+.text-ter {
   color: #f5f5f5;
 }
 
-.bdr-tertiary {
+.bdr-ter {
   border-color: #f5f5f5;
 }
 
-.bg-tertiary-lt-1 {
+.bg-ter-lt-1 {
   background-color: #f7f7f7;
 }
 
-.text-tertiary-lt-1 {
+.text-ter-lt-1 {
   color: #f7f7f7;
 }
 
-.bdr-tertiary-lt-1 {
+.bdr-ter-lt-1 {
   border-color: #f7f7f7;
 }
 
-.bg-tertiary-dk-1 {
+.bg-ter-dk-1 {
   background-color: #c4c4c4;
 }
 
-.text-tertiary-dk-1 {
+.text-ter-dk-1 {
   color: #c4c4c4;
 }
 
-.bdr-tertiary-dk-1 {
+.bdr-ter-dk-1 {
   border-color: #c4c4c4;
 }
 
-.bg-tertiary-lt-2 {
+.bg-ter-lt-2 {
   background-color: #f9f9f9;
 }
 
-.text-tertiary-lt-2 {
+.text-ter-lt-2 {
   color: #f9f9f9;
 }
 
-.bdr-tertiary-lt-2 {
+.bdr-ter-lt-2 {
   border-color: #f9f9f9;
 }
 
-.bg-tertiary-dk-2 {
+.bg-ter-dk-2 {
   background-color: #939393;
 }
 
-.text-tertiary-dk-2 {
+.text-ter-dk-2 {
   color: #939393;
 }
 
-.bdr-tertiary-dk-2 {
+.bdr-ter-dk-2 {
   border-color: #939393;
 }
 
-.bg-tertiary-lt-3 {
+.bg-ter-lt-3 {
   background-color: #fbfbfb;
 }
 
-.text-tertiary-lt-3 {
+.text-ter-lt-3 {
   color: #fbfbfb;
 }
 
-.bdr-tertiary-lt-3 {
+.bdr-ter-lt-3 {
   border-color: #fbfbfb;
 }
 
-.bg-tertiary-dk-3 {
+.bg-ter-dk-3 {
   background-color: #626262;
 }
 
-.text-tertiary-dk-3 {
+.text-ter-dk-3 {
   color: #626262;
 }
 
-.bdr-tertiary-dk-3 {
+.bdr-ter-dk-3 {
   border-color: #626262;
 }
 
-.bg-tertiary-lt-4 {
+.bg-ter-lt-4 {
   background-color: #fdfdfd;
 }
 
-.text-tertiary-lt-4 {
+.text-ter-lt-4 {
   color: #fdfdfd;
 }
 
-.bdr-tertiary-lt-4 {
+.bdr-ter-lt-4 {
   border-color: #fdfdfd;
 }
 
-.bg-tertiary-dk-4 {
+.bg-ter-dk-4 {
   background-color: #313131;
 }
 
-.text-tertiary-dk-4 {
+.text-ter-dk-4 {
   color: #313131;
 }
 
-.bdr-tertiary-dk-4 {
+.bdr-ter-dk-4 {
   border-color: #313131;
 }
 
@@ -895,11 +907,15 @@
 }
 
 .fs-xl {
-  font-size: 1.5rem;
+  font-size: 1.75rem;
 }
 
 .fs-xxl {
-  font-size: 2rem;
+  font-size: 2.75rem;
+}
+
+.fs-xxxl {
+  font-size: 4.5rem;
 }
 
 .fw-n {
@@ -955,7 +971,7 @@
 }
 
 .container {
-  width: 100%;
+  width: 80%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 1rem;
@@ -1385,15 +1401,4 @@
     flex-grow: 0;
     width: 100;
   }
-}
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-  text-decoration: none;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
 }
