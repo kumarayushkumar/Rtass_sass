@@ -1,6 +1,6 @@
 {
-  "name": "@kumarayushkumar/sasslib",
-  "version": "1.0.3",
+  "name": "@kumarayushkumar/sassay",
+  "version": "1.0.5",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,16 @@
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
     "sass": "^1.60.0"
+  }, 
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kumarayushkumar/Sassay"
   },
+  "keywords": [
+    "sass",
+    "framework",
+    "npm"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/kumarayushkumar"
   }
