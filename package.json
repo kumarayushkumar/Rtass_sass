@@ -1,6 +1,6 @@
 {
-  "name": "@kumarayushkumar/sassay",
-  "version": "1.0.5",
+  "name": "sassay",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,12 +17,10 @@
     "type": "git",
     "url": "https://github.com/kumarayushkumar/Sassay"
   },
+  "sass": "scss/sassay.scss",
   "keywords": [
     "sass",
     "framework",
     "npm"
-  ],
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/kumarayushkumar"
-  }
+  ]
 }
