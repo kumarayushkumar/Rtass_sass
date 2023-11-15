@@ -1,0 +1,15 @@
+@use 'variables' as *;
+
+.container {
+  width: $container-width;
+  max-width: $container-max-width;
+  margin: 0 auto;
+  padding: 0 $grid-gutter;
+}
+
+.container-fluid {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 $grid-gutter;
+
+}

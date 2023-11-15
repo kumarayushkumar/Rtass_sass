@@ -4,11 +4,16 @@ $secondary: #f5f5f5 !default;
 $tertiary: #f5f5f5 !default;
 $white: #fefefe !default;
 $black: #222222 !default;
+$red: #e23636 !default;
+
+$body-bg: $white !default;
+$error: $red !default;
 
 $colors: (
   "pri": $primary,
   "sec": $secondary,
   "ter": $tertiary,
+  "err": $error,
   "white": $white,
   "black": $black,
 );
@@ -26,11 +31,13 @@ $base-font-size: $base-size !default;
 $base-font-weight: 400 !default;
 $base-line-heigh: 1 !default;
 
+// Container
+$container-max-width: 1400px !default;
+$container-width: 80% !default;
+
 // Grid
 $grid-columns: 12 !default;
 $grid-gutter: $base-size !default;
-$grid-max-width: 1200px !default;
-$grid-width: 80% !default;
 $grid-gaps: (
   "0": 0,
   "1": 10px,
@@ -49,3 +56,5 @@ $breakpoints: (
   'xl': 1200px,
   'xxl': 1400px,
   ) !default;
+
+  $is-smooth-scroll: true !default;

@@ -13,33 +13,4 @@ $val in $colors {
   .bdr-#{$clr} {
     border-color: $val;
   }
-
-  @for $i from 1 through 4 {
-
-    // light
-    .bg-#{$clr}-lt-#{$i} {
-      background-color: mix(white, $val, $i * $clr-mix-percent);
-    }
-
-    .text-#{$clr}-lt-#{$i} {
-      color: mix(white, $val, $i * $clr-mix-percent);
-    }
-
-    .bdr-#{$clr}-lt-#{$i} {
-      border-color: mix(white, $val, $i * $clr-mix-percent);
-    }
-
-    // dark
-    .bg-#{$clr}-dk-#{$i} {
-      background-color: mix(black, $val, $i * $clr-mix-percent);
-    }
-
-    .text-#{$clr}-dk-#{$i} {
-      color: mix(black, $val, $i * $clr-mix-percent);
-    }
-
-    .bdr-#{$clr}-dk-#{$i} {
-      border-color: mix(black, $val, $i * $clr-mix-percent);
-    }
-  }
 }

@@ -2,22 +2,16 @@
 @use 'variables' as *;
 @use 'mixins/breakpoints' as *;
 
-.container {
-  width: $grid-width;
-  max-width: $grid-max-width;
-  margin: 0 auto;
-  padding: 0 $grid-gutter;
-}
-
 .row {
   display: flex;
   flex-wrap: row wrap;
 }
 
 @each $key, $val in $grid-gaps {
-  .gap-#{$key} > * {
+  .gap-#{$key}>* {
     padding: $val;
   }
+
   .gap-#{$key} {
     padding-left: 0;
     padding-right: 0;
@@ -28,9 +22,11 @@
   .jst-cnt-#{$val} {
     justify-content: $val;
   }
+
   .align-items-#{$val} {
     align-items: $val;
   }
+
   .align-cnt-#{$val} {
     align-content: $val;
   }

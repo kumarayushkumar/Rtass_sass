@@ -1,11 +1,21 @@
+@use 'variables' as *;
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
   text-decoration: none;
-  scroll-behavior: smooth;
+}
+
+html, body {
+  @if $is-smooth-scroll {
+    @media (prefers-reduced-motion: no-preference) {
+      scroll-behavior: smooth;
+    }
+  }
 }
 
 body {
   margin: 0;
+  background-color: $body-bg;
 }
