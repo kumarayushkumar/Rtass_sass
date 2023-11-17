@@ -1,7 +1,6 @@
 @use 'variables' as *;
 
-@each $clr,
-$val in $colors {
+@each $clr, $val in $colors {
   .bg-#{$clr} {
     background-color: $val;
   }

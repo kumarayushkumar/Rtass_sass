@@ -10,12 +10,12 @@ $body-bg: $white !default;
 $error: $red !default;
 
 $colors: (
-  "pri": $primary,
-  "sec": $secondary,
-  "ter": $tertiary,
-  "err": $error,
-  "white": $white,
-  "black": $black,
+  'pri': $primary,
+  'sec': $secondary,
+  'ter': $tertiary,
+  'err': $error,
+  'white': $white,
+  'black': $black
 );
 $clr-mix-percent: 20% !default;
 
@@ -25,11 +25,26 @@ $base-margin: $base-size !default;
 $base-padding: $base-size !default;
 $base-border-radius: $base-size !default;
 
+// Multiplier
+$multi-xs: 0.25 !default;
+$multi-s: 0.5 !default;
+$multi-l: 1.5 !default;
+$multi-xl: 2 !default;
+$multi-xxl: 4 !default;
+
 // Typo
-$base-font-family: "Roboto", sans-serif !default;
+$base-font-family: 'Roboto', sans-serif !default;
 $base-font-size: $base-size !default;
 $base-font-weight: 400 !default;
-$base-line-heigh: 1 !default;
+$base-line-height: 1 !default;
+
+// Font Multiplier
+$font-multi-xs: 0.75 !default;
+$font-multi-s: 0.875 !default;
+$font-multi-l: 1.25 !default;
+$font-multi-xl: 1.75 !default;
+$font-multi-xxl: 2.75 !default;
+$font-multi-xxxl: 4.5 !default;
 
 // Container
 $container-max-width: 1400px !default;
@@ -39,13 +54,14 @@ $container-width: 80% !default;
 $grid-columns: 12 !default;
 $grid-gutter: $base-size !default;
 $grid-gaps: (
-  "0": 0,
-  "1": 10px,
-  "2": 20px,
-  "3": 30px,
+  '0': 0,
+  '1': 10px,
+  '2': 20px,
+  '3': 30px
 ) !default;
 
-$layout-val: start center space-between space-around space-evenly flex-start flex-end !default;
+$layout-val: start center space-between space-around space-evenly flex-start
+  flex-end !default;
 
 // Breakpoints
 $breakpoints: (
@@ -54,7 +70,7 @@ $breakpoints: (
   'md': 768px,
   'lg': 992px,
   'xl': 1200px,
-  'xxl': 1400px,
-  ) !default;
+  'xxl': 1400px
+) !default;
 
-  $is-smooth-scroll: true !default;
+$is-smooth-scroll: true !default;
