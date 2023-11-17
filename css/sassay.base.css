@@ -97,24 +97,72 @@ body {
   padding: 0.25rem;
 }
 
+.px-xs {
+  padding: 0 0.25rem;
+}
+
+.py-xs {
+  padding: 0.25rem 0;
+}
+
 .p-s {
   padding: 0.5rem;
+}
+
+.px-s {
+  padding: 0 0.5rem;
+}
+
+.py-s {
+  padding: 0.5rem 0;
 }
 
 .p-m {
   padding: 1rem;
 }
 
+.px-m {
+  padding: 0 1rem;
+}
+
+.py-m {
+  padding: 1rem 0;
+}
+
 .p-l {
   padding: 1.5rem;
+}
+
+.px-l {
+  padding: 0 1.5rem;
+}
+
+.py-l {
+  padding: 1.5rem 0;
 }
 
 .p-xl {
   padding: 2rem;
 }
 
+.px-xl {
+  padding: 0 2rem;
+}
+
+.py-xl {
+  padding: 2rem 0;
+}
+
 .p-xxl {
   padding: 4rem;
+}
+
+.px-xxl {
+  padding: 0 4rem;
+}
+
+.py-xxl {
+  padding: 4rem 0;
 }
 
 .pl-0 {
@@ -233,28 +281,84 @@ body {
   margin: 0;
 }
 
+.mx-0 {
+  margin: 0 0;
+}
+
+.my-0 {
+  margin: 0 0;
+}
+
 .m-xs {
   margin: 0.25rem;
+}
+
+.mx-xs {
+  margin: 0 0.25rem;
+}
+
+.my-xs {
+  margin: 0.25rem 0;
 }
 
 .m-s {
   margin: 0.5rem;
 }
 
+.mx-s {
+  margin: 0 0.5rem;
+}
+
+.my-s {
+  margin: 0.5rem 0;
+}
+
 .m-m {
   margin: 1rem;
+}
+
+.mx-m {
+  margin: 0 1rem;
+}
+
+.my-m {
+  margin: 1rem 0;
 }
 
 .m-l {
   margin: 1.5rem;
 }
 
+.mx-l {
+  margin: 0 1.5rem;
+}
+
+.my-l {
+  margin: 1.5rem 0;
+}
+
 .m-xl {
   margin: 2rem;
 }
 
+.mx-xl {
+  margin: 0 2rem;
+}
+
+.my-xl {
+  margin: 2rem 0;
+}
+
 .m-xxl {
   margin: 4rem;
+}
+
+.mx-xxl {
+  margin: 0 4rem;
+}
+
+.my-xxl {
+  margin: 4rem 0;
 }
 
 .ml-0 {
@@ -427,6 +531,22 @@ body {
 
 .d-ig {
   display: inline-grid;
+}
+
+.f-r {
+  flex-direction: row;
+}
+
+.f-rr {
+  flex-direction: row-reverse;
+}
+
+.f-c {
+  flex-direction: column;
+}
+
+.f-cr {
+  flex-direction: column-reverse;
 }
 
 .fs-xs {

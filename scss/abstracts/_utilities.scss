@@ -146,6 +146,15 @@ $utilities: (
       'ig': inline-grid
     )
   ),
+  'flex-direction': (
+    'prefix': 'f',
+    'values': (
+      'r': row,
+      'rr': row-reverse,
+      'c': column,
+      'cr': column-reverse,
+    )
+  ),
   'font-size': (
     'prefix': 'fs',
     'values': (
@@ -185,6 +194,16 @@ $utilities: (
   @each $key, $val in $values {
     .#{$prefix}-#{$key} {
       #{$prop}: $val;
+    }
+
+    @if $prop == 'margin' or  $prop == 'padding' and $val != 0 {
+      .#{$prefix}x-#{$key} {
+        #{$prop}: 0 $val;
+      }
+
+      .#{$prefix}y-#{$key} {
+        #{$prop}: $val 0;
+      }
     }
   }
 }

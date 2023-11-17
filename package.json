@@ -1,6 +1,6 @@
 {
   "name": "sassay",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -21,7 +21,10 @@
   "keywords": [
     "sass",
     "framework",
-    "npm"
+    "npm",
+    "css",
+    "web",
+    "frontend"
   ],
   "private": false
 }
