@@ -4,7 +4,7 @@
 
 .row {
   display: flex;
-  flex-wrap: row wrap;
+  flex-wrap: $flex-wrap;
 }
 
 @each $key, $val in $grid-gaps {
@@ -19,15 +19,15 @@
 }
 
 @each $val in $layout-val {
-  .jst-cnt-#{$val} {
+  .jc-#{$val} {
     justify-content: $val;
   }
 
-  .align-items-#{$val} {
+  .ai-#{$val} {
     align-items: $val;
   }
 
-  .align-cnt-#{$val} {
+  .ac-#{$val} {
     align-content: $val;
   }
 }

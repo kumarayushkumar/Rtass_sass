@@ -30,39 +30,27 @@ body {
 }
 
 .bg-sec {
-  background-color: #f5f5f5;
+  background-color: #33ffe7;
 }
 
 .text-sec {
-  color: #f5f5f5;
+  color: #33ffe7;
 }
 
 .bdr-sec {
-  border-color: #f5f5f5;
+  border-color: #33ffe7;
 }
 
 .bg-ter {
-  background-color: #f5f5f5;
+  background-color: #fc8282;
 }
 
 .text-ter {
-  color: #f5f5f5;
+  color: #fc8282;
 }
 
 .bdr-ter {
-  border-color: #f5f5f5;
-}
-
-.bg-err {
-  background-color: #e23636;
-}
-
-.text-err {
-  color: #e23636;
-}
-
-.bdr-err {
-  border-color: #e23636;
+  border-color: #fc8282;
 }
 
 .bg-white {
@@ -644,7 +632,7 @@ body {
 
 .row {
   display: flex;
-  flex-wrap: row wrap;
+  flex-wrap: wrap;
 }
 
 .gap-0 > * {
@@ -683,87 +671,87 @@ body {
   padding-right: 0;
 }
 
-.jst-cnt-start {
+.jc-start {
   justify-content: start;
 }
 
-.align-items-start {
+.ai-start {
   align-items: start;
 }
 
-.align-cnt-start {
+.ac-start {
   align-content: start;
 }
 
-.jst-cnt-center {
+.jc-center {
   justify-content: center;
 }
 
-.align-items-center {
+.ai-center {
   align-items: center;
 }
 
-.align-cnt-center {
+.ac-center {
   align-content: center;
 }
 
-.jst-cnt-space-between {
+.jc-space-between {
   justify-content: space-between;
 }
 
-.align-items-space-between {
+.ai-space-between {
   align-items: space-between;
 }
 
-.align-cnt-space-between {
+.ac-space-between {
   align-content: space-between;
 }
 
-.jst-cnt-space-around {
+.jc-space-around {
   justify-content: space-around;
 }
 
-.align-items-space-around {
+.ai-space-around {
   align-items: space-around;
 }
 
-.align-cnt-space-around {
+.ac-space-around {
   align-content: space-around;
 }
 
-.jst-cnt-space-evenly {
+.jc-space-evenly {
   justify-content: space-evenly;
 }
 
-.align-items-space-evenly {
+.ai-space-evenly {
   align-items: space-evenly;
 }
 
-.align-cnt-space-evenly {
+.ac-space-evenly {
   align-content: space-evenly;
 }
 
-.jst-cnt-flex-start {
+.jc-flex-start {
   justify-content: flex-start;
 }
 
-.align-items-flex-start {
+.ai-flex-start {
   align-items: flex-start;
 }
 
-.align-cnt-flex-start {
+.ac-flex-start {
   align-content: flex-start;
 }
 
-.jst-cnt-flex-end {
+.jc-flex-end {
   justify-content: flex-end;
 }
 
-.align-items-flex-end {
+.ai-flex-end {
   align-items: flex-end;
 }
 
-.align-cnt-flex-end {
+.ac-flex-end {
   align-content: flex-end;
 }
 

@@ -4,11 +4,11 @@
   width: $container-width;
   max-width: $container-max-width;
   margin: 0 auto;
-  padding: 0 $grid-gutter;
+  padding: 0 $container-padding;
 }
 
 .container-fluid {
   width: 100%;
   margin: 0 auto;
-  padding: 0 $grid-gutter;
+  padding: 0 $container-padding;
 }

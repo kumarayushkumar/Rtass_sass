@@ -1,23 +1,23 @@
 // Color
 $primary: #1a1ae2 !default;
-$secondary: #f5f5f5 !default;
-$tertiary: #f5f5f5 !default;
+$secondary: #33ffe7 !default;
+$tertiary: #fc8282 !default;
 $white: #fefefe !default;
 $black: #222222 !default;
-$red: #e23636 !default;
+// $red: #e23636 !default;
 
-$body-bg: $white !default;
-$error: $red !default;
+$body-bg: $white !default; // Body color
+// $error: $red !default;
 
+// Color platte
 $colors: (
   'pri': $primary,
   'sec': $secondary,
   'ter': $tertiary,
-  'err': $error,
+  // 'err': $error,
   'white': $white,
   'black': $black
-);
-$clr-mix-percent: 20% !default;
+) !default;
 
 // Base Size
 $base-size: 1rem !default;
@@ -25,7 +25,8 @@ $base-margin: $base-size !default;
 $base-padding: $base-size !default;
 $base-border-radius: $base-size !default;
 
-// Multiplier
+// Multiplier for padding and margin 
+// p-xs = $base-padding * $multi-xs
 $multi-xs: 0.25 !default;
 $multi-s: 0.5 !default;
 $multi-l: 1.5 !default;
@@ -38,7 +39,8 @@ $base-font-size: $base-size !default;
 $base-font-weight: 400 !default;
 $base-line-height: 1 !default;
 
-// Font Multiplier
+// Multiplier for font-size
+// fs-xs = $base-font-size * $font-multi-xs
 $font-multi-xs: 0.75 !default;
 $font-multi-s: 0.875 !default;
 $font-multi-l: 1.25 !default;
@@ -49,10 +51,11 @@ $font-multi-xxxl: 4.5 !default;
 // Container
 $container-max-width: 1400px !default;
 $container-width: 80% !default;
+$container-padding: $base-size !default;
 
 // Grid
+$flex-wrap: wrap !default;
 $grid-columns: 12 !default;
-$grid-gutter: $base-size !default;
 $grid-gaps: (
   '0': 0,
   '1': 10px,
@@ -73,4 +76,4 @@ $breakpoints: (
   'xxl': 1400px
 ) !default;
 
-$is-smooth-scroll: true !default;
+$is-smooth-scroll: true !default; // Smooth scroll
