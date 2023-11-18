@@ -35,21 +35,21 @@ $primary: #fff;
 - **`pt-[size]`**: Top padding
 - **`pb-[size]`**: Bottom padding
 - **`m-[size]`**: Margin in all direction
-- `m**x-[size]**`: Horizontal margin
-- `m**y-[size]**`: Vertical margin
-- `m**l-[size]**`: Left margin
-- `m**r-[size]**`: Right margin
-- `m**t-[size]**`: Top margin
-- `m**b-[size]**`: Bottom margin
+- **`mx-[size]`**: Horizontal margin
+- **`my-[size]`**: Vertical margin
+- **`ml-[size]`**: Left margin
+- **`mr-[size]`**: Right margin
+- **`mt-[size]`**: Top margin
+- **`mb-[size]`**: Bottom margin
 
 Sizes available: **`0`**, **`xs`**, **`s`**, **`m`**, **`l`**, **`xl`**, **`xxl`**.
 
 ```html
-<p class="p-xs">Html</p>
+<p class="p-xs">Jha2</p>
 ```
 
 ```css
-padding: 0 0.25; 
+padding: 0 0.25;
 /* 0.25 because the $base-padding = $base-size = 1rem and $multi-xs = 0.25;
 ```
 
@@ -104,9 +104,9 @@ padding: 0 0.25;
 - **`.jc-start`**: Justify content start
 - **`.ai-start`**: Align items start
 - **`.ac-start`**: Align content start
-- **`.jc-center`**: Justify content center
-- **`.ai-center`**: Align items center
-- **`.ac-center`**: Align content center
+- **`.jc-center`**: Justify content centre
+- **`.ai-center`**: Align items centre
+- **`.ac-center`**: Align content centre
 - **`.jc-space-between`**: Justify content space between
 - **`.ai-space-between`**: Align items space between
 - **`.ac-space-between`**: Align content space between
@@ -124,8 +124,12 @@ padding: 0 0.25;
 - **`.ac-flex-end`**: Align content flex-end
 
 ```html
-<div class="d-f jst-cnt-center align-items-flex-end">This div has flex display, centered content, and items aligned to the end.</div>
-<section class="d-g jst-cnt-space-around">This section has grid display with space-around justification.</section>
+<div class="d-f jc-center ai-flex-end">
+This div has flex display, centred content, and items aligned to the end.
+</div>
+<section class="d-g jc-space-around">
+This section has grid display with space-around justification.
+</section>
 ```
 
 ## **Layout**
@@ -139,17 +143,13 @@ The container class sets the width, maximum width, margin, and padding for the m
 - **`.container`**: Container with a width of 80%, maximum width of 1400px, and 1rem padding in horizontal direction.
 
 ```html
-<div class="container">
-  <!-- Your content goes here -->
-</div>
+<div class="container">  <!-- Your content goes here --></div>
 ```
 
 - **`.container-fluid`**: Full-width container with 1rem padding in horizontal direction.
 
 ```html
-<div class="container-fluid">
-  <!-- Your full-width content goes here -->
-</div>
+<div class="container-fluid">  <!-- Your full-width content goes here --></div>
 ```
 
 ### **Rows and Columns**
@@ -159,8 +159,8 @@ Rows and columns are used to create flexible and responsive layouts.
 - **`.row`**: Flex container with a row wrap, used to create rows of columns.
 
 ```html
-<div class="row">
-  <div class="col-6">Column 1</div>
+<div class="row">  
+  <div class="col-6">Column 1</div> 
   <div class="col-6">Column 2</div>
 </div>
 ```
