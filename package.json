@@ -1,6 +1,6 @@
 {
   "name": "sassay",
-  "version": "1.0.13",
+  "version": "1.1.14",
   "description": "Simple and flexible Sass framework",
   "main": "index.js",
   "scripts": {

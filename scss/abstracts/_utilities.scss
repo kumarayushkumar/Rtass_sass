@@ -124,7 +124,7 @@ $utilities: (
   'border': (
     'prefix': 'bdr',
     'values': (
-      '0': 0,
+      '0': 0
     )
   ),
   'border-radius': (
@@ -158,7 +158,7 @@ $utilities: (
       'r': row,
       'rr': row-reverse,
       'c': column,
-      'cr': column-reverse,
+      'cr': column-reverse
     )
   ),
   'font-size': (
@@ -171,6 +171,15 @@ $utilities: (
       'xl': $base-font-size * $font-multi-xl,
       'xxl': $base-font-size * $font-multi-xxl,
       'xxxl': $base-font-size * $font-multi-xxxl
+    )
+  ),
+  'text-align': (
+    'prefix': 'ta',
+    'values': (
+      'l': left,
+      'c': center,
+      'r': right,
+      'j': justify
     )
   ),
   'font-weight': (
@@ -202,7 +211,7 @@ $utilities: (
       #{$prop}: $val;
     }
 
-    @if $prop == 'margin' or  $prop == 'padding' and $val != 0 {
+    @if $prop == 'margin' or $prop == 'padding' and $val != 0 {
       .#{$prefix}x-#{$key} {
         #{$prop}-left: $val;
         #{$prop}-right: $val;

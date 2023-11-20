@@ -24,7 +24,7 @@ body {
   background-color: #1a1ae2;
 }
 
-.text-pri {
+.txt-pri {
   color: #1a1ae2;
 }
 
@@ -36,7 +36,7 @@ body {
   background-color: #33ffe7;
 }
 
-.text-sec {
+.txt-sec {
   color: #33ffe7;
 }
 
@@ -48,7 +48,7 @@ body {
   background-color: #fc8282;
 }
 
-.text-ter {
+.txt-ter {
   color: #fc8282;
 }
 
@@ -60,7 +60,7 @@ body {
   background-color: #fefefe;
 }
 
-.text-white {
+.txt-white {
   color: #fefefe;
 }
 
@@ -72,7 +72,7 @@ body {
   background-color: #222222;
 }
 
-.text-black {
+.txt-black {
   color: #222222;
 }
 
@@ -596,6 +596,22 @@ body {
 
 .fs-xxxl {
   font-size: 4.5rem;
+}
+
+.ta-l {
+  text-align: left;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.ta-j {
+  text-align: justify;
 }
 
 .fw-n {
