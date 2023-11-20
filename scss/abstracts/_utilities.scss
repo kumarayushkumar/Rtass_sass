@@ -121,6 +121,12 @@ $utilities: (
       'xxl': $base-margin * $multi-xxl
     )
   ),
+  'border': (
+    'prefix': 'bdr',
+    'values': (
+      '0': 0,
+    )
+  ),
   'border-radius': (
     'prefix': 'bdr-rd',
     'values': (
@@ -198,11 +204,13 @@ $utilities: (
 
     @if $prop == 'margin' or  $prop == 'padding' and $val != 0 {
       .#{$prefix}x-#{$key} {
-        #{$prop}: 0 $val;
+        #{$prop}-left: $val;
+        #{$prop}-right: $val;
       }
 
       .#{$prefix}y-#{$key} {
-        #{$prop}: $val 0;
+        #{$prop}-top: $val;
+        #{$prop}-bottom: $val;
       }
     }
   }

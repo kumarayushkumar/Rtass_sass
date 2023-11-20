@@ -1,4 +1,4 @@
-// Color
+// Colors
 $primary: #1a1ae2 !default;
 $secondary: #33ffe7 !default;
 $tertiary: #fc8282 !default;
@@ -25,7 +25,7 @@ $base-margin: $base-size !default;
 $base-padding: $base-size !default;
 $base-border-radius: $base-size !default;
 
-// Multiplier for padding and margin 
+// Multiplier for padding and margin
 // p-xs = $base-padding * $multi-xs
 $multi-xs: 0.25 !default;
 $multi-s: 0.5 !default;
@@ -77,3 +77,5 @@ $breakpoints: (
 ) !default;
 
 $is-smooth-scroll: true !default; // Smooth scroll
+$margin-zero: true !default; // Sets margin zero to all elements * { margin: 0; }
+$border-zero: true !default; // Sets border zero to all elements * { border: 0; }

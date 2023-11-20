@@ -5,6 +5,9 @@
 *::after {
   box-sizing: border-box;
   text-decoration: none;
+  list-style: none;
+  @if $margin-zero { margin: 0; }
+  @if $border-zero { border: 0; }
 }
 
 html,
