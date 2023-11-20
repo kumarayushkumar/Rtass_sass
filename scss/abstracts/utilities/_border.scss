@@ -1,0 +1,33 @@
+@use '../variables' as *;
+
+$border-utilities: (
+  'border': (
+    'prefix': 'bdr',
+    'values': (
+      '0': 0
+    )
+  ),
+  'border-radius': (
+    'prefix': 'bdr-rd',
+    'values': (
+      'none': 0,
+      'xs': $base-border-radius * $multi-xs,
+      's': $base-border-radius * $multi-s,
+      'm': $base-border-radius,
+      'l': $base-border-radius * $multi-l,
+      'xl': $base-border-radius * $multi-xl,
+      'xxl': 50%
+    )
+  )
+) !default;
+
+@each $prop, $map in $border-utilities {
+  $prefix: map-get($map, 'prefix');
+  $values: map-get($map, 'values');
+
+  @each $key, $val in $values {
+    .#{$prefix}-#{$key} {
+      #{$prop}: $val;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+@use '../variables' as *;
+
+$display-utilities: (
+  'display': (
+    'prefix': 'd',
+    'values': (
+      'n': none,
+      'b': block,
+      'ib': inline-block,
+      'i': inline,
+      'f': flex,
+      'if': inline-flex,
+      'g': grid,
+      'ig': inline-grid
+    )
+  )
+) !default;
+
+@each $prop, $map in $display-utilities {
+  $prefix: map-get($map, 'prefix');
+  $values: map-get($map, 'values');
+
+  @each $key, $val in $values {
+    .#{$prefix}-#{$key} {
+      #{$prop}: $val;
+    }
+  }
+}

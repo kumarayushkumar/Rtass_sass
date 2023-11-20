@@ -1,0 +1,54 @@
+@use '../variables' as *;
+
+$typography-utilities: (
+  'font-size': (
+    'prefix': 'fs',
+    'values': (
+      'xs': $base-font-size * $font-multi-xs,
+      's': $base-font-size * $font-multi-s,
+      'm': $base-font-size,
+      'l': $base-font-size * $font-multi-l,
+      'xl': $base-font-size * $font-multi-xl,
+      'xxl': $base-font-size * $font-multi-xxl,
+      'xxxl': $base-font-size * $font-multi-xxxl
+    )
+  ),
+  'text-align': (
+    'prefix': 'ta',
+    'values': (
+      'l': left,
+      'c': center,
+      'r': right,
+      'j': justify
+    )
+  ),
+  'font-weight': (
+    'prefix': 'fw',
+    'values': (
+      'n': normal,
+      'b': bold,
+      'l': lighter,
+      'bd': bolder,
+      '1': 100,
+      '2': 200,
+      '3': 300,
+      '4': 400,
+      '5': 500,
+      '6': 600,
+      '7': 700,
+      '8': 800,
+      '9': 900
+    )
+  )
+) !default;
+
+@each $prop, $map in $typography-utilities {
+  $prefix: map-get($map, 'prefix');
+  $values: map-get($map, 'values');
+
+  @each $key, $val in $values {
+    .#{$prefix}-#{$key} {
+      #{$prop}: $val;
+    }
+  }
+}

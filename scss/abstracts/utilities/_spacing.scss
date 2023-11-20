@@ -1,6 +1,6 @@
-@use 'variables' as *;
+@use '../variables' as *;
 
-$utilities: (
+$spacing-utilities: (
   'padding': (
     'prefix': 'p',
     'values': (
@@ -120,89 +120,10 @@ $utilities: (
       'xl': $base-margin * $multi-xl,
       'xxl': $base-margin * $multi-xxl
     )
-  ),
-  'border': (
-    'prefix': 'bdr',
-    'values': (
-      '0': 0
-    )
-  ),
-  'border-radius': (
-    'prefix': 'bdr-rd',
-    'values': (
-      'none': 0,
-      'xs': $base-border-radius * $multi-xs,
-      's': $base-border-radius * $multi-s,
-      'm': $base-border-radius,
-      'l': $base-border-radius * $multi-l,
-      'xl': $base-border-radius * $multi-xl,
-      'xxl': 50%
-    )
-  ),
-  'display': (
-    'prefix': 'd',
-    'values': (
-      'n': none,
-      'b': block,
-      'ib': inline-block,
-      'i': inline,
-      'f': flex,
-      'if': inline-flex,
-      'g': grid,
-      'ig': inline-grid
-    )
-  ),
-  'flex-direction': (
-    'prefix': 'f',
-    'values': (
-      'r': row,
-      'rr': row-reverse,
-      'c': column,
-      'cr': column-reverse
-    )
-  ),
-  'font-size': (
-    'prefix': 'fs',
-    'values': (
-      'xs': $base-font-size * $font-multi-xs,
-      's': $base-font-size * $font-multi-s,
-      'm': $base-font-size,
-      'l': $base-font-size * $font-multi-l,
-      'xl': $base-font-size * $font-multi-xl,
-      'xxl': $base-font-size * $font-multi-xxl,
-      'xxxl': $base-font-size * $font-multi-xxxl
-    )
-  ),
-  'text-align': (
-    'prefix': 'ta',
-    'values': (
-      'l': left,
-      'c': center,
-      'r': right,
-      'j': justify
-    )
-  ),
-  'font-weight': (
-    'prefix': 'fw',
-    'values': (
-      'n': normal,
-      'b': bold,
-      'l': lighter,
-      'bd': bolder,
-      '1': 100,
-      '2': 200,
-      '3': 300,
-      '4': 400,
-      '5': 500,
-      '6': 600,
-      '7': 700,
-      '8': 800,
-      '9': 900
-    )
   )
 ) !default;
 
-@each $prop, $map in $utilities {
+@each $prop, $map in $spacing-utilities {
   $prefix: map-get($map, 'prefix');
   $values: map-get($map, 'values');
 

@@ -1,0 +1,24 @@
+@use '../variables' as *;
+
+$flex-utilities: (
+  'flex-direction': (
+    'prefix': 'f',
+    'values': (
+      'r': row,
+      'rr': row-reverse,
+      'c': column,
+      'cr': column-reverse
+    )
+  )
+) !default;
+
+@each $prop, $map in $flex-utilities {
+  $prefix: map-get($map, 'prefix');
+  $values: map-get($map, 'values');
+
+  @each $key, $val in $values {
+    .#{$prefix}-#{$key} {
+      #{$prop}: $val;
+    }
+  }
+}

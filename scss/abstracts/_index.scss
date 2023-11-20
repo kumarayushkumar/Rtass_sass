@@ -2,7 +2,11 @@
 @forward 'reboot';
 @forward 'colors';
 
-@forward 'utilities';
+@forward 'utilities/spacing';
+@forward 'utilities/border';
+@forward 'utilities/display';
+@forward 'utilities/flex';
+@forward 'utilities/typography';
 
 @forward 'containers';
 @forward 'grid';
