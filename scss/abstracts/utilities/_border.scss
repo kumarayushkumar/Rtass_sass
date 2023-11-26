@@ -10,7 +10,7 @@ $border-utilities: (
   'border-radius': (
     'prefix': 'bdr-rd',
     'values': (
-      'none': 0,
+      '0': 0,
       'xs': $base-border-radius * $multi-xs,
       's': $base-border-radius * $multi-s,
       'm': $base-border-radius,

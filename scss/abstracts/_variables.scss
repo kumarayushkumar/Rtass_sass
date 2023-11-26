@@ -4,10 +4,8 @@ $secondary: #33ffe7 !default;
 $tertiary: #fc8282 !default;
 $white: #fefefe !default;
 $black: #222222 !default;
-// $red: #e23636 !default;
 
 $body-bg: $white !default; // Body color
-// $error: $red !default;
 
 // Color platte
 $colors: (
@@ -34,7 +32,6 @@ $multi-xl: 2 !default;
 $multi-xxl: 4 !default;
 
 // Typo
-$base-font-family: 'Roboto', sans-serif !default;
 $base-font-size: $base-size !default;
 $base-font-weight: 400 !default;
 $base-line-height: 1 !default;
@@ -54,7 +51,7 @@ $container-width: 80% !default;
 $container-padding: $base-size !default;
 
 // Grid
-$flex-wrap: wrap !default;
+$flex-flow: row wrap !default;
 $grid-columns: 12 !default;
 $grid-gaps: (
   '0': 0,
@@ -79,3 +76,4 @@ $breakpoints: (
 $is-smooth-scroll: true !default; // Smooth scroll
 $margin-zero: true !default; // Sets margin zero to all elements * { margin: 0; }
 $border-zero: true !default; // Sets border zero to all elements * { border: 0; }
+$padding-zero: true !default; // Sets padding zero to all elements * { padding: 0; }
