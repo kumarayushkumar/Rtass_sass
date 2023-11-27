@@ -63,7 +63,7 @@ padding: 0 0.25;
 - **`.fs-l`**: Large font size
 - **`.fs-xl`**: Extra-large font size
 - **`.fs-xxl`**: Larger than extra-large font size
-- **`.fs-xxxl`**: Largest font size
+- **`.fs-xxxl`**: Super font size
 
 ### **Font Weights**
 
@@ -132,9 +132,21 @@ This section has grid display with space-around justification.
 </section>
 ```
 
-## **Layout**
+## Border Radius
 
-The layout classes in **Your Sass Framework** are designed to provide a structured and responsive foundation for building web layouts. Each class follows a naming convention of **`[property]-[value]`**.
+- **`.bdr-rd-0`**: No border-radius applied.
+- **`.bdr-rd-xs`**: Extra-small border-radius.
+- **`.bdr-rd-s`**: Small border-radius.
+- **`.bdr-rd-m`**: Medium border-radius.
+- **`.bdr-rd-l`**: Large border-radius.
+- **`.bdr-rd-xl`**: Extra-large border-radius.
+- **`.bdr-rd-xxl`**: Border-radius of 50%, creating a circular shape.
+
+```html
+<div class="bdr-rd-s">This element has a small border-radius.</div>
+```
+
+## Layout
 
 ### **Container**
 
@@ -159,8 +171,8 @@ Rows and columns are used to create flexible and responsive layouts.
 - **`.row`**: Flex container with a row wrap, used to create rows of columns.
 
 ```html
-<div class="row">  
-  <div class="col-6">Column 1</div> 
+<div class="row">
+  <div class="col-6">Column 1</div>
   <div class="col-6">Column 2</div>
 </div>
 ```

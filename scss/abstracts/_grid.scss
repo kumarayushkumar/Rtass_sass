@@ -8,13 +8,8 @@
 }
 
 @each $key, $val in $grid-gaps {
-  .gap-#{$key} > * {
-    padding: $val;
-  }
-
   .gap-#{$key} {
-    padding-left: 0;
-    padding-right: 0;
+    gap: $val;
   }
 }
 
