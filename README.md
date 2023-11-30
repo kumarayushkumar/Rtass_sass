@@ -73,6 +73,13 @@ padding: 0 0.25;
 - **`.fw-bd`**: Bolder font weight
 - **`.fw-1` to `.fw-9`**: Numeric font weights from 100 to 900
 
+## Text Alignment
+
+- **`.ta-l`**: Align text to the left
+- **`.ta-c`**: Align text to the centre
+- **`.ta-r`**: Align text to the right
+- **`.ta-j`**: Justify text
+
 ## **Display**
 
 ### **Display Property Options**

@@ -65,6 +65,7 @@ $spacing-utilities: (
     'prefix': 'm',
     'values': (
       '0': 0,
+      'a': auto,
       'xs': $base-margin * $multi-xs,
       's': $base-margin * $multi-s,
       'm': $base-margin,
