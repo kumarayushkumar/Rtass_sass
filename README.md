@@ -14,9 +14,9 @@ Import sassay in your main file
 
 ## Custom style
 
-We recommend you creating a _custom.scss file where you can overwrite the variables and import sassay.
+We recommend you creating a \_custom.scss file where you can overwrite the variables and import sassay.
 
-**Check sassay/scss/absracts/_variables.scss**
+**Check sassay/scss/absracts/\_variables.scss**
 
 ```scss
 $primary: #fff;
@@ -132,10 +132,10 @@ padding: 0 0.25;
 
 ```html
 <div class="d-f jc-center ai-flex-end">
-This div has flex display, centred content, and items aligned to the end.
+  This div has flex display, centred content, and items aligned to the end.
 </div>
 <section class="d-g jc-space-around">
-This section has grid display with space-around justification.
+  This section has grid display with space-around justification.
 </section>
 ```
 
@@ -162,13 +162,13 @@ The container class sets the width, maximum width, margin, and padding for the m
 - **`.container`**: Container with a width of 80%, maximum width of 1400px, and 1rem padding in horizontal direction.
 
 ```html
-<div class="container">  <!-- Your content goes here --></div>
+<div class="container"><!-- Your content goes here --></div>
 ```
 
 - **`.container-fluid`**: Full-width container with 1rem padding in horizontal direction.
 
 ```html
-<div class="container-fluid">  <!-- Your full-width content goes here --></div>
+<div class="container-fluid"><!-- Your full-width content goes here --></div>
 ```
 
 ### **Rows and Columns**
