@@ -1,4 +1,5 @@
 @use '../variables' as *;
+@use '../mixins/breakpoints' as *;
 
 $spacing-utilities: (
   'padding': (
@@ -124,25 +125,76 @@ $spacing-utilities: (
   )
 ) !default;
 
-@each $prop, $map in $spacing-utilities {
-  $prefix: map-get($map, 'prefix');
-  $values: map-get($map, 'values');
+@mixin spacing($size: 0) {
+  @if $size == 0 {
+    @each $prop, $map in $spacing-utilities {
+      $prefix: map-get($map, 'prefix');
+      $values: map-get($map, 'values');
 
-  @each $key, $val in $values {
-    .#{$prefix}-#{$key} {
-      #{$prop}: $val;
-    }
+      @each $key, $val in $values {
+        .#{$prefix}-#{$key} {
+          #{$prop}: $val;
+        }
 
-    @if $prop == 'margin' or $prop == 'padding' and $val != 0 {
-      .#{$prefix}x-#{$key} {
-        #{$prop}-left: $val;
-        #{$prop}-right: $val;
+        @if $prop == 'margin' or $prop == 'padding' and $val != 0 {
+          .#{$prefix}x-#{$key} {
+            #{$prop}-left: $val;
+            #{$prop}-right: $val;
+          }
+
+          .#{$prefix}y-#{$key} {
+            #{$prop}-top: $val;
+            #{$prop}-bottom: $val;
+          }
+        }
       }
+    }
+  } @else {
+    @each $prop, $map in $spacing-utilities {
+      $prefix: map-get($map, 'prefix');
+      $values: map-get($map, 'values');
 
-      .#{$prefix}y-#{$key} {
-        #{$prop}-top: $val;
-        #{$prop}-bottom: $val;
+      @each $key, $val in $values {
+        .#{$prefix}-#{$key}-#{$size} {
+          #{$prop}: $val;
+        }
+
+        @if $prop == 'margin' or $prop == 'padding' and $val != 0 {
+          .#{$prefix}x-#{$key}-#{$size} {
+            #{$prop}-left: $val;
+            #{$prop}-right: $val;
+          }
+
+          .#{$prefix}y-#{$key}-#{$size} {
+            #{$prop}-top: $val;
+            #{$prop}-bottom: $val;
+          }
+        }
       }
     }
   }
+}
+
+@include xs {
+  @include spacing();
+}
+
+@include sm {
+  @include spacing(sm);
+}
+
+@include md {
+  @include spacing(md);
+}
+
+@include lg {
+  @include spacing(lg);
+}
+
+@include xl {
+  @include spacing(xl);
+}
+
+@include xxl {
+  @include spacing(xxl);
 }
