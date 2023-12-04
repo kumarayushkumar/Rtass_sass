@@ -16,7 +16,9 @@ Import sassay in your main file
 
 We recommend you creating a \_custom.scss file where you can overwrite the variables and import sassay.
 
-**Check sassay/scss/absracts/\_variables.scss**
+Must define your style before starting working on your project.
+
+**Must check node_modules/sassay/scss/absracts/\_variables.scss**
 
 ```scss
 $primary: #fff;
@@ -25,7 +27,18 @@ $primary: #fff;
 @import '../../node_modules/sassay/scss/sassay.base.scss';
 ```
 
+## **Breakpoints**
+
+- **`xs`**: Extra small screens (0px and above)
+- **`sm`**: Small screens (576px and above)
+- **`md`**: Medium screens (768px and above)
+- **`lg`**: Large screens (992px and above)
+- **`xl`**: Extra large screens (1200px and above)
+- **`xxl`**: Extra extra large screens (1400px and above)
+
 ## Spacing
+
+### **Padding Classes**
 
 - **`p-[size]`**: Padding in all direction
 - **`px-[size]`**: Horizontal padding
@@ -34,6 +47,32 @@ $primary: #fff;
 - **`pr-[size]`**: Right padding
 - **`pt-[size]`**: Top padding
 - **`pb-[size]`**: Bottom padding
+- **`px-[size]`**: Adds horizontal padding of the specified size.
+- **`py-[size]`**: Adds vertical padding of the specified size.
+
+Sizes available: **`0`**, **`xs`**, **`s`**, **`m`**, **`l`**, **`xl`**, **`xxl`**,**`a`- auto**
+
+```html
+<p class="p-xs">Jha2</p>
+```
+
+same as
+
+```css
+padding: 0 0.25;
+/* 0.25 because the $base-padding = $base-size = 1rem and $multi-xs = 0.25;
+```
+
+### Examples:
+
+```html
+<div class="p-m">This div has medium padding on all sides.</div>
+<div class="px-sm">This div has small horizontal padding.</div>
+<div class="py-xl">This div has extra large vertical padding.</div>
+```
+
+### **Margin Classes**
+
 - **`m-[size]`**: Margin in all direction
 - **`mx-[size]`**: Horizontal margin
 - **`my-[size]`**: Vertical margin
@@ -41,16 +80,40 @@ $primary: #fff;
 - **`mr-[size]`**: Right margin
 - **`mt-[size]`**: Top margin
 - **`mb-[size]`**: Bottom margin
+- **`mx-[size]`**: Adds horizontal margin of the specified size.
+- **`my-[size]`**: Adds vertical margin of the specified size.
 
-Sizes available: **`0`**, **`xs`**, **`s`**, **`m`**, **`l`**, **`xl`**, **`xxl`**.
+Sizes available: **`0`**, **`xs`**, **`s`**, **`m`**, **`l`**, **`xl`**, **`xxl`**,**`a`- auto**
+
+### Examples:
 
 ```html
-<p class="p-xs">Jha2</p>
+<div class="m-lg">This div has large margin on all sides.</div>
+<div class="mx-xs">This div has extra small horizontal margin.</div>
+<div class="my-xxl">This div has extra extra large vertical margin.</div>
 ```
 
-```css
-padding: 0 0.25;
-/* 0.25 because the $base-padding = $base-size = 1rem and $multi-xs = 0.25;
+## **Responsive Classes**
+
+To ensure a consistent experience across various screen sizes, the spacing classes are responsive and adapt to different breakpoints.
+
+- **`p-[size]-[breakpoint]`**
+- **`m-[size]-[breakpoint]`**
+
+### **Example:**
+
+```html
+<!-- On small screens (576px and above), this div has medium padding -->
+<div class="p-m-sm">Responsive padding on small screens.</div>
+
+<div class="p-xs p-sm-md p-m-lg">
+  Responsive padding for different breakpoints.
+</div>
+<!--
+(0 and above) this div has extra small padding
+(768px and above) this div has small padding
+(992px and above) this div has medium padding
+ -->
 ```
 
 ## **Typography**
